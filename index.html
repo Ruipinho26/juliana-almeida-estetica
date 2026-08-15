@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══════════ SEO ═══════════ -->
+  <title>Juliana Almeida Estética — cuidar de ti, realçar a tua essência</title>
+  <meta name="description" content="Estética profissional: tratamentos faciais e corporais, massagens, epilação, manicure e pedicure, sobrancelhas e pestanas. Esteticista com formação de nível 4.">
+  <meta name="author" content="Juliana Almeida Estética">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F8F1EA">
+  <!-- SUBSTITUIR o domínio quando publicares -->
+  <link rel="canonical" href="https://www.julianaalmeidaestetica.pt/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Juliana Almeida Estética">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Juliana Almeida Estética">
+  <meta property="og:description" content="Cuidar de ti. Realçar a tua essência.">
+  <meta property="og:url" content="https://www.julianaalmeidaestetica.pt/">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <!-- ═══════════ DEFINIÇÕES SVG PARTILHADAS (gradiente rose gold) ═══════════ -->
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0"   stop-color="#EFD0BF"/>
+        <stop offset=".38" stop-color="#C58E76"/>
+        <stop offset=".72" stop-color="#A0654F"/>
+        <stop offset="1"   stop-color="#D3A48D"/>
+      </linearGradient>
+      <linearGradient id="rg-soft" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#C58E76" stop-opacity=".55"/>
+        <stop offset="1" stop-color="#C58E76" stop-opacity=".08"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ═══════════════════ CABEÇALHO ═══════════════════ -->
+  <header id="site-head" class="head">
+    <div class="wrap head__inner">
+      <a class="brand" href="#top" id="brand-head" aria-label="Início"></a>
+      <nav class="nav" id="nav-desktop" aria-label="Navegação principal"></nav>
+      <div class="head__actions">
+        <a class="btn btn--ghost btn--sm" href="#contacto" id="cta-head">Marcar</a>
+        <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-controls="mnav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mnav" id="mnav" aria-hidden="true">
+    <div class="mnav__bg" data-close></div>
+    <nav class="mnav__panel" id="nav-mobile" aria-label="Menu"></nav>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero">
+      <!-- Peónia a abrir — vídeo de fundo (o mesmo do site_aromas) -->
+      <video class="hero__vid" autoplay muted loop playsinline
+             poster="media/hero-poster.jpg" aria-hidden="true">
+        <source src="media/hero-bg.webm" type="video/webm">
+        <source src="media/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <div class="wrap hero__content">
+        <p class="eyebrow reveal" id="hero-eyebrow"></p>
+        <h1 class="reveal" id="hero-titulo"></h1>
+        <p class="hero__lead reveal" id="hero-lead"></p>
+        <div class="hero__cta reveal" id="hero-cta"></div>
+        <div class="hero__chips reveal" id="hero-chips"></div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">Descobrir<span></span></div>
+    </section>
+
+    <!-- ═══════════════════ TIRA DE CONFIANÇA ═══════════════════ -->
+    <section class="trust" aria-label="Compromissos">
+      <div class="wrap trust__row" id="trust-row"></div>
+    </section>
+
+    <!-- ═══════════════════ ÁREAS ═══════════════════ -->
+    <section class="sec" id="areas">
+      <div class="wrap">
+        <div class="sec__head reveal" id="areas-head"></div>
+        <div class="area-grid" id="areas-grid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ MENU DE TRATAMENTOS + PREÇOS ═══════════════════ -->
+    <section class="sec sec--cream" id="tratamentos">
+      <div class="wrap">
+        <div class="sec__head sec__head--center reveal" id="menu-head"></div>
+        <div class="menu" id="menu-servicos"></div>
+        <p class="menu__nota reveal" id="menu-nota"></p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ SOBRE ═══════════════════ -->
+    <section class="sec" id="sobre">
+      <div class="wrap sobre__grid">
+        <div class="sobre__txt reveal" id="sobre-txt"></div>
+        <aside class="sobre__box reveal" id="sobre-comp"></aside>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+    <section class="sec sec--cream" id="contacto">
+      <div class="wrap">
+        <div class="sec__head sec__head--center reveal" id="contacto-head"></div>
+        <div class="contacto" id="contacto-corpo"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════ RODAPÉ ═══════════════════ -->
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <svg class="foot__lotus" viewBox="0 0 120 64" fill="none" aria-hidden="true">
+        <g stroke="url(#rg)" stroke-width="1.2" stroke-linejoin="round">
+          <path d="M60 60 C48 46 48 24 60 8 C72 24 72 46 60 60 Z"/>
+          <path d="M60 60 C40 52 30 34 32 18 C50 24 62 42 60 60 Z"/>
+          <path d="M60 60 C80 52 90 34 88 18 C70 24 58 42 60 60 Z"/>
+          <path d="M60 60 C36 58 18 46 12 32 C32 30 54 42 60 60 Z"/>
+          <path d="M60 60 C84 58 102 46 108 32 C88 30 66 42 60 60 Z"/>
+        </g>
+      </svg>
+      <span class="brand brand--foot" id="brand-foot"></span>
+      <span class="foot__note" id="foot-note"></span>
+      <span class="foot__legal" id="foot-legal"></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
