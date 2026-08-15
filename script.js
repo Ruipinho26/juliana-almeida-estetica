@@ -165,20 +165,15 @@ const CONTEUDO = {
         { nome: "Design e modelação de sobrancelhas", preco: "" },
         { nome: "Coloração de sobrancelhas",          preco: "" },
         { nome: "Cuidados estéticos das sobrancelhas",preco: "" },
-        { nome: "Coloração de pestanas",              preco: "" },
-        { nome: "Lifting de pestanas",                preco: "" }
+        { nome: "Coloração de pestanas",              preco: "" }
       ]
     },
     {
       cor: "tec",
       nome: "Equipamentos estéticos",
-      resumo: "Tecnologia como complemento do trabalho manual, quando indicada.",
+      resumo: "O aparelho que uso como complemento, quando o tratamento o justifica.",
       servicos: [
-        { nome: "Fototerapia",                              preco: "" },
-        { nome: "Iontoforese",                              preco: "" },
-        { nome: "Ultrassons estéticos",                     preco: "" },
-        { nome: "Equipamentos de tratamento facial e corporal", preco: "" },
-        { nome: "Eletroestética",                           preco: "" }
+        { nome: "Alta frequência", preco: "" }
       ]
     }
   ],

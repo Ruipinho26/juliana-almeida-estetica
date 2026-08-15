@@ -64,7 +64,7 @@ E os **preços** de cada tratamento (ver secção seguinte).
 ## Serviços — cortar o que ela não faz
 
 Os tratamentos estão em `CONTEUDO.areas`, agrupados em **7 áreas**, tal como no PDF
-*Esteticista Nível 4*. São **43 tratamentos**, e é normal que ela não faça todos.
+*Esteticista Nível 4*, já podados por ela. São **38 tratamentos**.
 
 **Antes de publicar, apague o que ela não faz.** Cada tratamento é uma linha:
 
