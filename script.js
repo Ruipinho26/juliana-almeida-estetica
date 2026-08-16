@@ -30,17 +30,17 @@ const CONTEUDO = {
      ───────────────────────────────────────────────────────── */
   contacto: {
     telefone:   "915 435 419",
-    whatsapp:   "",   // ← CONFIRMAR se o 915 435 419 tem WhatsApp.
-                      //    Se sim, escrever "351915435419" (só dígitos, com o 351).
-    email:      "",   // ex.: "geral@julianaalmeidaestetica.com"
+    whatsapp:   "351915435419",   // confirmado por ela: é o mesmo número do telemóvel
+    email:      "",   // ← A ÚNICA COISA QUE FALTA AQUI. ex.: "geral@julianaalmeidaestetica.com"
     morada:     "Rua Santo António, n.º 1087",
     localidade: "4505-520 Lobão · Santa Maria da Feira",
-    horario:    ""    // ex.: "Seg – Sex · 9h – 19h  ·  Sáb · 9h – 13h"
+    // \n muda de linha. Fonte: cartaz "Horário de atendimento" que ela enviou.
+    horario:    "Seg a Sex · 9h – 20h\nSábado · 8h – 18h\nPausas · 13h – 14h e 16h30 – 17h"
   },
 
   redes: {
-    instagram: "",    // URL completo, ex.: "https://instagram.com/..."
-    facebook:  ""     // "" esconde
+    instagram: "https://www.instagram.com/juliana254964",
+    facebook:  "https://www.facebook.com/profile.php?id=61591956296550"
   },
 
   /* ─────────────────────────────────────────────────────────
@@ -418,7 +418,10 @@ const CONTEUDO = {
         (vazio(ct.email) ? ouTodo("") : '<a href="mailto:' + esc(ct.email) + '">' + esc(ct.email) + "</a>") +
         "</dd></div>";
   dl += "<div><dt>Onde</dt><dd>" + ouTodo(morada) + "</dd></div>";
-  dl += "<div><dt>Horário</dt><dd>" + ouTodo(ct.horario) + "</dd></div>";
+  // o horário tem várias linhas — usa fmt() para respeitar os \n
+  dl += "<div><dt>Horário</dt><dd>" +
+        (vazio(ct.horario) ? ouTodo("") : fmt(ct.horario)) +
+        "</dd></div>";
 
   function via(cls, ico, titulo, etiqueta, href, externo) {
     var tag = href ? "a" : "div";
