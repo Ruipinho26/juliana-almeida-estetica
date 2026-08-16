@@ -95,14 +95,14 @@ const CONTEUDO = {
       nome: "Tratamentos faciais",
       resumo: "Limpeza, hidratação e equilíbrio, ajustados ao teu tipo de pele.",
       servicos: [
-        { nome: "Limpeza de pele",                          preco: "" },
-        { nome: "Higienização e esfoliação",                preco: "" },
-        { nome: "Tratamento de hidratação",                 preco: "" },
-        { nome: "Tratamento para pele oleosa",              preco: "" },
-        { nome: "Tratamento para pele seca ou desidratada", preco: "" },
-        { nome: "Máscara facial",                           preco: "" },
-        { nome: "Massagem facial",                          preco: "" },
-        { nome: "Tratamento de rosto com equipamento",      preco: "" }
+        { nome: "Limpeza de pele",                          preco: "48 €" },
+        { nome: "Higienização e esfoliação",                preco: "28 €" },
+        { nome: "Tratamento de hidratação",                 preco: "35 €" },
+        { nome: "Tratamento para pele oleosa",              preco: "40 €" },
+        { nome: "Tratamento para pele seca ou desidratada", preco: "sob consulta" },
+        { nome: "Máscara facial",                           preco: "+10 €" },
+        { nome: "Massagem facial",                          preco: "30 €" },
+        { nome: "Tratamento de rosto com equipamento",      preco: "incluído" }
       ]
     },
     {
@@ -110,13 +110,14 @@ const CONTEUDO = {
       nome: "Massagens e corpo",
       resumo: "Do relaxamento profundo ao trabalho de contorno e drenagem.",
       servicos: [
-        { nome: "Massagem de relaxamento",      preco: "" },
-        { nome: "Massagem modeladora",          preco: "" },
-        { nome: "Drenagem linfática manual",    preco: "" },
-        { nome: "Esfoliação corporal",          preco: "" },
-        { nome: "Hidratação corporal",          preco: "" },
-        { nome: "Envolvimento corporal",        preco: "" },
-        { nome: "Tratamento de estética corporal", preco: "" }
+        { nome: "Massagem localizada · 30 min", preco: "25 €" },
+        { nome: "Massagem de relaxamento",      preco: "40 €" },
+        { nome: "Massagem modeladora",          preco: "40 €" },
+        { nome: "Drenagem linfática manual",    preco: "40 €" },
+        { nome: "Tratamento de estética corporal", preco: "40 €" },
+        { nome: "Esfoliação corporal",          preco: "+15 €" },
+        { nome: "Hidratação corporal",          preco: "+15 €" },
+        { nome: "Envolvimento corporal",        preco: "sob consulta" }
       ]
     },
     {
@@ -124,14 +125,15 @@ const CONTEUDO = {
       nome: "Epilação",
       resumo: "Cera quente ou morna, com preparação e cuidado pós-epilação.",
       servicos: [
-        { nome: "Epilação com cera quente", preco: "" },
-        { nome: "Epilação com cera morna",  preco: "" },
-        { nome: "Pernas",                   preco: "" },
-        { nome: "Braços",                   preco: "" },
-        { nome: "Axilas",                   preco: "" },
-        { nome: "Virilha",                  preco: "" },
-        { nome: "Rosto",                    preco: "" },
-        { nome: "Buço",                     preco: "" }
+        { nome: "Buço",             preco: "5 €" },
+        { nome: "Axilas",           preco: "7 €" },
+        { nome: "Virilha simples",  preco: "8 €" },
+        { nome: "Meia perna",       preco: "10 €" },
+        { nome: "Virilha cavada",   preco: "12 €" },
+        { nome: "Braços",           preco: "14 €" },
+        { nome: "Rosto completo",   preco: "15 €" },
+        { nome: "Perna inteira",    preco: "16 €" },
+        { nome: "Virilha integral", preco: "22 €" }
       ]
     },
     {
@@ -139,11 +141,12 @@ const CONTEUDO = {
       nome: "Mãos e unhas",
       resumo: "Unhas tratadas, cutículas cuidadas e acabamento impecável.",
       servicos: [
-        { nome: "Manicure tradicional",          preco: "" },
-        { nome: "Manicure com verniz gel",       preco: "" },
-        { nome: "Tratamento e cuidado das unhas",preco: "" },
-        { nome: "Esmaltação",                    preco: "" },
-        { nome: "Cuidado das cutículas",         preco: "" }
+        { nome: "Esmaltação",                    preco: "8 €" },
+        { nome: "Manicure tradicional",          preco: "12 €" },
+        { nome: "Manicure com verniz gel",       preco: "25 €" },
+        { nome: "Remoção de verniz gel",         preco: "8 €" },
+        { nome: "Cuidado das cutículas",         preco: "incluído" },
+        { nome: "Tratamento e cuidado das unhas",preco: "sob consulta" }
       ]
     },
     {
@@ -151,11 +154,11 @@ const CONTEUDO = {
       nome: "Pés",
       resumo: "Pedicure completa, com esfoliação e hidratação a sério.",
       servicos: [
-        { nome: "Pedicure",                          preco: "" },
-        { nome: "Pedicure com verniz gel",           preco: "" },
-        { nome: "Cuidado das unhas dos pés",         preco: "" },
-        { nome: "Cuidados estéticos da pele dos pés",preco: "" },
-        { nome: "Esfoliação e hidratação",           preco: "" }
+        { nome: "Cuidado das unhas dos pés",         preco: "15 €" },
+        { nome: "Esfoliação e hidratação · spa dos pés", preco: "25 €" },
+        { nome: "Pedicure",                          preco: "30 €" },
+        { nome: "Cuidados estéticos da pele dos pés",preco: "35 €" },
+        { nome: "Pedicure com verniz gel",           preco: "38 €" }
       ]
     },
     {
@@ -163,10 +166,11 @@ const CONTEUDO = {
       nome: "Sobrancelhas e pestanas",
       resumo: "O desenho certo muda o olhar — e o rosto inteiro.",
       servicos: [
-        { nome: "Design e modelação de sobrancelhas", preco: "" },
-        { nome: "Coloração de sobrancelhas",          preco: "" },
-        { nome: "Cuidados estéticos das sobrancelhas",preco: "" },
-        { nome: "Coloração de pestanas",              preco: "" }
+        { nome: "Coloração de sobrancelhas",          preco: "10 €" },
+        { nome: "Design e modelação de sobrancelhas", preco: "12 €" },
+        { nome: "Design + coloração",                 preco: "20 €" },
+        { nome: "Coloração de pestanas",              preco: "incluído" },
+        { nome: "Cuidados estéticos das sobrancelhas",preco: "sob consulta" }
       ]
     },
     {
@@ -174,7 +178,7 @@ const CONTEUDO = {
       nome: "Equipamentos estéticos",
       resumo: "O aparelho que uso como complemento, quando o tratamento o justifica.",
       servicos: [
-        { nome: "Alta frequência", preco: "" }
+        { nome: "Alta frequência", preco: "incluída" }
       ]
     }
   ],
