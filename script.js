@@ -29,11 +29,12 @@ const CONTEUDO = {
      Campos vazios ("") aparecem no site como "a preencher".
      ───────────────────────────────────────────────────────── */
   contacto: {
-    telefone:   "",   // ex.: "912 345 678"
-    whatsapp:   "",   // SÓ DÍGITOS com indicativo, ex.: "351912345678"
-    email:      "",   // ex.: "geral@julianaalmeida.pt"
-    morada:     "",   // ex.: "Rua das Flores, 12"
-    localidade: "",   // ex.: "Braga"
+    telefone:   "915 435 419",
+    whatsapp:   "",   // ← CONFIRMAR se o 915 435 419 tem WhatsApp.
+                      //    Se sim, escrever "351915435419" (só dígitos, com o 351).
+    email:      "",   // ex.: "geral@julianaalmeidaestetica.com"
+    morada:     "Rua Santo António, n.º 1087",
+    localidade: "4505-520 Lobão · Santa Maria da Feira",
     horario:    ""    // ex.: "Seg – Sex · 9h – 19h  ·  Sáb · 9h – 13h"
   },
 
