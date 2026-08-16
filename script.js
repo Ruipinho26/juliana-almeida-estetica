@@ -31,7 +31,7 @@ const CONTEUDO = {
   contacto: {
     telefone:   "915 435 419",
     whatsapp:   "351915435419",   // confirmado por ela: é o mesmo número do telemóvel
-    email:      "",   // ← A ÚNICA COISA QUE FALTA AQUI. ex.: "geral@julianaalmeidaestetica.com"
+    email:      "julianaalmeida13.05.85@gmail.com",
     morada:     "Rua Santo António, n.º 1087",
     localidade: "4505-520 Lobão · Santa Maria da Feira",
     // \n muda de linha. Fonte: cartaz "Horário de atendimento" que ela enviou.
@@ -113,7 +113,10 @@ const CONTEUDO = {
         { nome: "Massagem localizada · 30 min", preco: "25 €" },
         { nome: "Massagem de relaxamento",      preco: "40 €" },
         { nome: "Massagem modeladora",          preco: "40 €" },
-        { nome: "Drenagem linfática manual",    preco: "40 €" },
+        // Ela só faz drenagem às pernas — não é drenagem de corpo inteiro.
+        // Por isso o preço NÃO é o dos 40 € da pesquisa (esse era para 60 min de
+        // corpo inteiro). O comparável direto de pernas é 25 €/45min em SJM.
+        { nome: "Drenagem linfática manual · pernas", preco: "30 €" },
         { nome: "Tratamento de estética corporal", preco: "40 €" },
         { nome: "Esfoliação corporal",          preco: "+15 €" },
         { nome: "Hidratação corporal",          preco: "+15 €" },
