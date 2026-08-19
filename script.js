@@ -67,7 +67,7 @@ const CONTEUDO = {
   hero: {
     etiqueta: "Estética profissional · Nível 4",
     titulo:   "Cuidar de ti.\nRealçar a tua *essência.*",
-    lead:     "Tratamentos de rosto e corpo, epilação, mãos e pés, sobrancelhas e pestanas — com avaliação personalizada, produtos profissionais e o tempo que a tua pele merece.",
+    lead:     "Massagens, tratamentos de rosto e corpo, epilação, mãos e pés, sobrancelhas e pestanas — com avaliação personalizada, produtos profissionais e o tempo que a tua pele merece.",
     btnPrincipal: { texto: "Ver tratamentos", ancora: "#tratamentos" },
     btnSecundario:{ texto: "Marcar",          ancora: "#contacto" }
   },
@@ -91,36 +91,37 @@ const CONTEUDO = {
      ───────────────────────────────────────────────────────── */
   areas: [
     {
+      cor: "corpo",
+      nome: "Massagens",
+      resumo: "Do relaxamento de corpo inteiro ao trabalho de contorno.",
+      servicos: [
+        { nome: "Massagem relaxante · corpo inteiro", preco: "30 €" },
+        { nome: "Massagem relaxante · costas",        preco: "20 €" },
+        { nome: "Massagem modeladora",                preco: "20 €" },
+        { nome: "Massagem de pernas",                 preco: "15 €" }
+      ]
+    },
+    {
       cor: "facial",
       nome: "Tratamentos faciais",
-      resumo: "Limpeza, hidratação e equilíbrio, ajustados ao teu tipo de pele.",
+      resumo: "Limpeza de pele completa, com avaliação do teu tipo de pele.",
       servicos: [
-        { nome: "Limpeza de pele",                          preco: "48 €" },
-        { nome: "Higienização e esfoliação",                preco: "28 €" },
-        { nome: "Tratamento de hidratação",                 preco: "35 €" },
-        { nome: "Tratamento para pele oleosa",              preco: "40 €" },
-        { nome: "Tratamento para pele seca ou desidratada", preco: "sob consulta" },
-        { nome: "Máscara facial",                           preco: "+10 €" },
-        { nome: "Massagem facial",                          preco: "30 €" },
-        { nome: "Tratamento de rosto com equipamento",      preco: "incluído" }
+        { nome: "Limpeza de pele completa", preco: "35 €" }
       ]
     },
     {
       cor: "corpo",
-      nome: "Massagens e corpo",
-      resumo: "Do relaxamento profundo ao trabalho de contorno e drenagem.",
+      nome: "Tratamentos corporais",
+      resumo: "Reafirmar, tratar a celulite e cuidar da pele do corpo.",
       servicos: [
-        { nome: "Massagem localizada · 30 min", preco: "25 €" },
-        { nome: "Massagem de relaxamento",      preco: "40 €" },
-        { nome: "Massagem modeladora",          preco: "40 €" },
-        // Ela só faz drenagem às pernas — não é drenagem de corpo inteiro.
-        // Por isso o preço NÃO é o dos 40 € da pesquisa (esse era para 60 min de
-        // corpo inteiro). O comparável direto de pernas é 25 €/45min em SJM.
-        { nome: "Drenagem linfática manual · pernas", preco: "30 €" },
-        { nome: "Tratamento de estética corporal", preco: "40 €" },
-        { nome: "Esfoliação corporal",          preco: "+15 €" },
-        { nome: "Hidratação corporal",          preco: "+15 €" },
-        { nome: "Envolvimento corporal",        preco: "sob consulta" }
+        // ⚠ Nome por confirmar com a Juliana — no preçário dela lê-se "Es…ção corporal".
+        { nome: "Esfoliação corporal",                preco: "25 €" },
+        { nome: "Hidratação corporal",                preco: "15 €" },
+        { nome: "Tratamento reafirmante",             preco: "45 €" },
+        { nome: "Tratamento anticelulítico",          preco: "40 €" },
+        { nome: "Tratamento modelador",               preco: "60 €" },
+        { nome: "Tratamento para gordura localizada", preco: "50 €" },
+        { nome: "Envolvimento corporal",              preco: "30 €" }
       ]
     },
     {
@@ -128,40 +129,37 @@ const CONTEUDO = {
       nome: "Epilação",
       resumo: "Cera quente ou morna, com preparação e cuidado pós-epilação.",
       servicos: [
-        { nome: "Buço",             preco: "5 €" },
+        { nome: "Sobrancelhas",     preco: "5 €" },
+        { nome: "Buço",             preco: "4 €" },
         { nome: "Axilas",           preco: "7 €" },
-        { nome: "Virilha simples",  preco: "8 €" },
         { nome: "Meia perna",       preco: "10 €" },
-        { nome: "Virilha cavada",   preco: "12 €" },
-        { nome: "Braços",           preco: "14 €" },
-        { nome: "Rosto completo",   preco: "15 €" },
-        { nome: "Perna inteira",    preco: "16 €" },
-        { nome: "Virilha integral", preco: "22 €" }
+        { nome: "Perna inteira",    preco: "15 €" },
+        { nome: "Virilha simples",  preco: "8 €" },
+        { nome: "Virilha completa", preco: "12 €" },
+        { nome: "Braços",           preco: "10 €" },
+        { nome: "Corpo completo",   preco: "30 €" }
       ]
     },
     {
       cor: "maos",
-      nome: "Mãos e unhas",
+      nome: "Mãos",
       resumo: "Unhas tratadas, cutículas cuidadas e acabamento impecável.",
       servicos: [
-        { nome: "Esmaltação",                    preco: "8 €" },
-        { nome: "Manicure tradicional",          preco: "12 €" },
-        { nome: "Manicure com verniz gel",       preco: "25 €" },
-        { nome: "Remoção de verniz gel",         preco: "8 €" },
-        { nome: "Cuidado das cutículas",         preco: "incluído" },
-        { nome: "Tratamento e cuidado das unhas",preco: "sob consulta" }
+        { nome: "Manicure simples",        preco: "10 €" },
+        { nome: "Manicure + verniz",       preco: "12 €" },
+        { nome: "Manicure com verniz gel", preco: "15 €" },
+        { nome: "Remoção de verniz gel",   preco: "5 €" }
       ]
     },
     {
       cor: "pes",
       nome: "Pés",
-      resumo: "Pedicure completa, com esfoliação e hidratação a sério.",
+      resumo: "Pedicure cuidada, do clássico ao verniz gel.",
       servicos: [
-        { nome: "Cuidado das unhas dos pés",         preco: "15 €" },
-        { nome: "Esfoliação e hidratação · spa dos pés", preco: "25 €" },
-        { nome: "Pedicure",                          preco: "30 €" },
-        { nome: "Cuidados estéticos da pele dos pés",preco: "35 €" },
-        { nome: "Pedicure com verniz gel",           preco: "38 €" }
+        { nome: "Pedicure simples",      preco: "15 €" },
+        { nome: "Pedicure completa",     preco: "18 €" },
+        { nome: "Pedicure + verniz gel", preco: "22 €" },
+        { nome: "Remoção de verniz gel", preco: "5 €" }
       ]
     },
     {
@@ -169,19 +167,22 @@ const CONTEUDO = {
       nome: "Sobrancelhas e pestanas",
       resumo: "O desenho certo muda o olhar — e o rosto inteiro.",
       servicos: [
-        { nome: "Coloração de sobrancelhas",          preco: "10 €" },
-        { nome: "Design e modelação de sobrancelhas", preco: "12 €" },
-        { nome: "Design + coloração",                 preco: "20 €" },
-        { nome: "Coloração de pestanas",              preco: "incluído" },
-        { nome: "Cuidados estéticos das sobrancelhas",preco: "sob consulta" }
+        { nome: "Design e modelação de sobrancelhas", preco: "7 €" },
+        { nome: "Coloração de sobrancelhas",          preco: "8 €" },
+        { nome: "Design + coloração",                 preco: "12 €" },
+        { nome: "Coloração de pestanas",              preco: "10 €" }
       ]
     },
     {
       cor: "tec",
-      nome: "Equipamentos estéticos",
-      resumo: "O aparelho que uso como complemento, quando o tratamento o justifica.",
+      nome: "Tecnologias estéticas",
+      resumo: "Aparelhos profissionais, sozinhos ou a reforçar um tratamento.",
       servicos: [
-        { nome: "Alta frequência", preco: "incluída" }
+        { nome: "Fototerapia",                          preco: "20 €" },
+        { nome: "Iontoforese",                          preco: "10 €" },
+        { nome: "Ultrassom estético",                   preco: "15 €" },
+        { nome: "Eletroestimulação",                    preco: "25 €" },
+        { nome: "Tratamento com aparelho + cosméticos", preco: "a partir de 30 €" }
       ]
     }
   ],
@@ -189,7 +190,7 @@ const CONTEUDO = {
   /* Cabeçalhos das duas secções de serviços */
   areasHead: {
     kicker: "O que faço",
-    titulo: "Sete áreas, um mesmo *cuidado.*",
+    titulo: "Oito áreas, um mesmo *cuidado.*",
     sub:    "Cada tratamento começa por uma avaliação da pele e termina com aconselhamento para casa."
   },
   menuHead: {
