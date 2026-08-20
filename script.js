@@ -114,7 +114,8 @@ const CONTEUDO = {
       nome: "Tratamentos corporais",
       resumo: "Reafirmar, tratar a celulite e cuidar da pele do corpo.",
       servicos: [
-        // ⚠ Nome por confirmar com a Juliana — no preçário dela lê-se "Es…ção corporal".
+        // Confirmado a 20/08/2026: o preçário dela usa os nomes do protótipo,
+        // e no protótipo esta linha é "Esfoliação corporal".
         { nome: "Esfoliação corporal",                preco: "25 €" },
         { nome: "Hidratação corporal",                preco: "15 €" },
         { nome: "Tratamento reafirmante",             preco: "45 €" },
